@@ -1,10 +1,33 @@
 footer
 	background-color: $bg-color1
 
+	.logo-footer
+		float: left
+		padding-top: 20px
+		padding-left: 20px
 	img
 		+size(50px)
+
 
 	p
 		color: white
 		margin: 0px
-		padding-bottom: 20px
+		padding-left: 20px
+		clear: both
+
+		&:nth-child(5)
+			padding-bottom: 20px
+
+
+	.social
+		padding-top: 20px
+		padding-right: 20px
+		float: right
+
+		svg
+			padding-left: 10px
+
+			&:hover
+				g
+					path
+						fill: black

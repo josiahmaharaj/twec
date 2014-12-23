@@ -1,9 +1,21 @@
-.videoWrapper
+.watch
 	background-color: $bg_color1
-	padding: 50px
-	text-align: center
+
+	h3, p
+		color: white
+		padding-top: 20px
+		text-align: center
+	
+	.videoWrapper
+
+		position: relative
+		padding-bottom: 56.25%
+		padding-top: 50px
+		height: 0
+		padding-left: 10%
 
 
-	iframe
-		width: auto
-		height: auto	  
+		iframe, object, embed
+			position: absolute
+			width: 80%
+			height: 80%	  

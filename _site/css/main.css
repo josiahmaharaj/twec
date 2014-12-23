@@ -229,13 +229,28 @@ header {
 
 footer {
   background-color: #25211d; }
+  footer .logo-footer {
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px; }
   footer img {
     height: 50px;
     width: 50px; }
   footer p {
     color: white;
     margin: 0px;
-    padding-bottom: 20px; }
+    padding-left: 20px;
+    clear: both; }
+    footer p:nth-child(5) {
+      padding-bottom: 20px; }
+  footer .social {
+    padding-top: 20px;
+    padding-right: 20px;
+    float: right; }
+    footer .social svg {
+      padding-left: 10px; }
+      footer .social svg:hover g path {
+        fill: black; }
 
 .about h3 {
   color: #2E2D33;
@@ -246,10 +261,67 @@ footer {
   padding-left: 30px;
   padding-right: 30px; }
 
-.videoWrapper {
-  background-color: #25211d;
-  padding: 50px;
-  text-align: center; }
-  .videoWrapper iframe {
-    width: auto;
-    height: auto; }
+.watch {
+  background-color: #25211d; }
+  .watch h3, .watch p {
+    color: white;
+    padding-top: 20px;
+    text-align: center; }
+  .watch .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 50px;
+    height: 0;
+    padding-left: 10%; }
+    .watch .videoWrapper iframe, .watch .videoWrapper object, .watch .videoWrapper embed {
+      position: absolute;
+      width: 80%;
+      height: 80%; }
+
+.contact {
+  background-color: #5f6f9b; }
+  .contact h3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0px; }
+  .contact form {
+    max-width: 500px;
+    margin: 0 auto 0px; }
+    .contact form input, .contact form textarea {
+      border: 2px solid #808080;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 10px; }
+      .contact form input:focus, .contact form textarea:focus {
+        outline: none;
+        border-color: #FFF498; }
+    .contact form [type=submit] {
+      background-color: #5f6f9b;
+      color: white;
+      text-transform: uppercase;
+      width: 33%; }
+      .contact form [type=submit]:hover {
+        background: #808080; }
+    .contact form textarea {
+      height: 10em; }
+    .contact form .contact_group label {
+      width: 50%;
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      .contact form .contact_group label:nth-child(1) {
+        padding-right: 5px; }
+      .contact form .contact_group label:nth-child(2) {
+        padding-right: 5px; }
+    .contact form label {
+      display: block;
+      margin-bottom: 20px; }
+      .contact form label:nth-child(3) {
+        padding-bottom: 50px;
+        margin-bottom: 0px; }
+      .contact form label span {
+        display: block; }
