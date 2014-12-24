@@ -226,6 +226,9 @@ header {
       color: white;
       display: inline;
       text-transform: strong; }
+    header nav ul ul {
+      background-color: pink;
+      display: none; }
 
 footer {
   background-color: #25211d; }
@@ -256,7 +259,7 @@ footer {
   color: #2E2D33;
   text-align: center; }
 .about p {
-  color: #2E2D33;
+  color: #808080;
   text-align: center;
   padding-left: 30px;
   padding-right: 30px; }
