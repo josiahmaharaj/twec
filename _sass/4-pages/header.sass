@@ -27,13 +27,58 @@ header
 		text-align: center
 		background-color: $bg-color2
 		ul
+			margin: 0px
+
 			li
 				font-size: 20px
 				padding-right: 50px
+				padding-top: 10px
+				padding-bottom: 10px
 				color: white
 				display: inline
 				text-transform: strong
 
-			ul
-				background-color: pink
-				display: none
+	nav ul ul
+		display: none
+		position: absolute 
+		top: 100%
+
+	nav ul li:hover > ul
+		display: block
+
+	nav ul
+		background-color: $bg-color2
+		padding: 0 20px
+		list-style: none
+		position: relative
+		display: inline-block
+
+		&:after
+			content: ""
+			clear: both
+			display: block
+
+	nav ul li
+		float: left
+
+		a
+			display: block
+			text-decoration: none
+
+	nav ul ul li
+		float: none	
+		//border-bottom: 1px solid white
+		position: relative
+		padding-top: 0px
+		padding-bottom: 5px
+		padding-left: 5px
+		padding-right: 5px
+
+		a
+			color: white
+
+
+
+
+
+				

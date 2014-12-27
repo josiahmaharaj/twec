@@ -220,15 +220,46 @@ header {
   header nav {
     text-align: center;
     background-color: #5f6f9b; }
-    header nav ul li {
-      font-size: 20px;
-      padding-right: 50px;
-      color: white;
-      display: inline;
-      text-transform: strong; }
-    header nav ul ul {
-      background-color: pink;
-      display: none; }
+    header nav ul {
+      margin: 0px; }
+      header nav ul li {
+        font-size: 20px;
+        padding-right: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+        display: inline;
+        text-transform: strong; }
+  header nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%; }
+  header nav ul li:hover > ul {
+    display: block; }
+  header nav ul {
+    background-color: #5f6f9b;
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+    display: inline-block; }
+    header nav ul:after {
+      content: "";
+      clear: both;
+      display: block; }
+  header nav ul li {
+    float: left; }
+    header nav ul li a {
+      display: block;
+      text-decoration: none; }
+  header nav ul ul li {
+    float: none;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px; }
+    header nav ul ul li a {
+      color: white; }
 
 footer {
   background-color: #25211d; }
