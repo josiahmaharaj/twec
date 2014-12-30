@@ -9,9 +9,3 @@ github_username:  josiahmaharaj
 
 # Build settings
 markdown: kramdown
-
--title: "Home"
- href:"/"
-
--title: "Arouca"
- href: "arouca"

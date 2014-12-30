@@ -260,6 +260,8 @@ header {
     padding-right: 5px; }
     header nav ul ul li a {
       color: white; }
+  header .active {
+    color: #25211d; }
 
 footer {
   background-color: #25211d; }

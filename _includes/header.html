@@ -7,18 +7,18 @@
 
 <nav>
   <ul>
-    <li><a href="/index.html">Home</a></li>
+    <li><a {% if page.url == '/index.html' %}class="active" {% endif %} href="/index.html">Home</a></li>
     <li><a href="#">Outstations</a>
     	<ul>
-    		<li><a href="/arouca.html">Arouca</a></li>
-    		<li><a href="#">Bon Air West</a></li>
-    		<li><a href="#">Coryal</a></li>
-    		<li><a href="#">Valencia</a></li>
+    		<li><a {% if page.url == '/pages/arouca.html' %}class="active" {% endif %} href="/pages/arouca.html">Arouca</a></li>
+    		<li><a {% if page.url == '/pages/bon_air_west.html' %}class="active" {% endif %} href="/pages/bon_air_west.html">Bon Air West</a></li>
+    		<li><a {% if page.url == '/pages/coryal.html' %}class="active" {% endif %} href="/pages/coryal.html">Coryal</a></li>
+    		<li><a {% if page.url == '/pages/valencia.html' %}class="active" {% endif %} href="/pages/valencia.html">Valencia</a></li>
     	</ul>
     </li>
-    <li><a href="#">Service Hours</a></li>
-    <li><a href="#">Youths</a></li>
-    <li><a href="#">Find Us</a></li>
+    <li><a {% if page.url == '/pages/service_hours.html' %}class="active" {% endif %} href="/pages/service_hours.html">Service Hours</a></li>
+    <li><a {% if page.url == '/pages/youths.html' %}class="active" {% endif %} href="/pages/youths.html">Youths</a></li>
+    <li><a {% if page.url == '/pages/find_us.html' %}class="active" {% endif %} href="/pages/find_us.html">Find Us</a></li>
   </ul>
 </nav>
 
