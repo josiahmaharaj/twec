@@ -195,6 +195,309 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
+.avatars-arouca h3 {
+  color: #25211d;
+  text-align: center; }
+.avatars-arouca .face-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center; }
+@media screen and (max-width: 690px) {
+  .avatars-arouca .face-wrap span {
+    display: hidden;
+      display-width: 174px; }
+  .avatars-arouca span {
+    text-align: center; } }
+
+.servicehours-arouca {
+  background: #25211d; }
+  .servicehours-arouca h3, .servicehours-arouca h4, .servicehours-arouca p {
+    color: white; }
+  .servicehours-arouca h3 {
+    text-align: center; }
+  .servicehours-arouca .service-wrap-arouca {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: center; }
+    @media screen and (max-width: 960px) {
+      .servicehours-arouca .service-wrap-arouca {
+        display: block; }
+        .servicehours-arouca .service-wrap-arouca h4 {
+          color: #5f6f9b; } }
+    .servicehours-arouca .service-wrap-arouca div {
+      text-align: center; }
+    .servicehours-arouca .service-wrap-arouca .spacer {
+      margin-top: 20px;
+      width: 300px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto; }
+    .servicehours-arouca .service-wrap-arouca .mask {
+      overflow: hidden;
+      height: 20px; }
+    .servicehours-arouca .service-wrap-arouca .mask:after {
+      content: "";
+      display: block;
+      margin: -25px auto 0;
+      width: 100%;
+      height: 25px;
+      border-radius: 125px/12px;
+      box-shadow: 0 0 8px white; }
+
+.avatars-bonairwest h3 {
+  color: #25211d;
+  text-align: center; }
+.avatars-bonairwest .face-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center; }
+@media screen and (max-width: 690px) {
+  .avatars-bonairwest .face-wrap span {
+    display: hidden;
+      display-width: 174px; }
+  .avatars-bonairwest span {
+    text-align: center; } }
+
+.servicehours-bonairwest {
+  background: #25211d; }
+  .servicehours-bonairwest h3, .servicehours-bonairwest h4, .servicehours-bonairwest p {
+    color: white; }
+  .servicehours-bonairwest h3 {
+    text-align: center;
+    padding-top: 10px; }
+  .servicehours-bonairwest .service-wrap-bonairwest {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: center; }
+    @media screen and (max-width: 960px) {
+      .servicehours-bonairwest .service-wrap-bonairwest {
+        display: block; }
+        .servicehours-bonairwest .service-wrap-bonairwest h4 {
+          color: #5f6f9b; } }
+    .servicehours-bonairwest .service-wrap-bonairwest div {
+      text-align: center; }
+    .servicehours-bonairwest .service-wrap-bonairwest .spacer {
+      margin-top: 20px;
+      width: 300px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto; }
+    .servicehours-bonairwest .service-wrap-bonairwest .mask {
+      overflow: hidden;
+      height: 20px; }
+    .servicehours-bonairwest .service-wrap-bonairwest .mask:after {
+      content: "";
+      display: block;
+      margin: -25px auto 0;
+      width: 100%;
+      height: 25px;
+      border-radius: 125px/12px;
+      box-shadow: 0 0 8px white; }
+
+.avatars-coryal h3 {
+  color: #25211d;
+  text-align: center; }
+.avatars-coryal .face-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center; }
+@media screen and (max-width: 690px) {
+  .avatars-coryal .face-wrap span {
+    display: hidden;
+      display-width: 174px; }
+  .avatars-coryal span {
+    text-align: center; } }
+
+.servicehours-coryal {
+  background: #25211d; }
+  .servicehours-coryal h3, .servicehours-coryal h4, .servicehours-coryal p {
+    color: white; }
+  .servicehours-coryal h3 {
+    text-align: center;
+    padding-top: 10px; }
+  .servicehours-coryal .service-wrap-coryal {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: center; }
+    @media screen and (max-width: 960px) {
+      .servicehours-coryal .service-wrap-coryal {
+        display: block; }
+        .servicehours-coryal .service-wrap-coryal h4 {
+          color: #5f6f9b; } }
+    .servicehours-coryal .service-wrap-coryal div {
+      text-align: center; }
+    .servicehours-coryal .service-wrap-coryal .spacer {
+      margin-top: 20px;
+      width: 300px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto; }
+    .servicehours-coryal .service-wrap-coryal .mask {
+      overflow: hidden;
+      height: 20px; }
+    .servicehours-coryal .service-wrap-coryal .mask:after {
+      content: "";
+      display: block;
+      margin: -25px auto 0;
+      width: 100%;
+      height: 25px;
+      border-radius: 125px/12px;
+      box-shadow: 0 0 8px white; }
+
+.avatars-valencia h3 {
+  color: #25211d;
+  text-align: center; }
+.avatars-valencia .face-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  -o-justify-content: space-around;
+  justify-content: space-around;
+  -ms-flex-pack: center; }
+@media screen and (max-width: 690px) {
+  .avatars-valencia .face-wrap span {
+    display: hidden;
+      display-width: 174px; }
+  .avatars-valencia span {
+    text-align: center; } }
+
+.servicehours-valencia {
+  background: #25211d; }
+  .servicehours-valencia h3, .servicehours-valencia h4, .servicehours-valencia p {
+    color: white; }
+  .servicehours-valencia h3 {
+    text-align: center;
+    padding-top: 10px; }
+  .servicehours-valencia .service-wrap-valencia {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    -o-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: center; }
+    @media screen and (max-width: 960px) {
+      .servicehours-valencia .service-wrap-valencia {
+        display: block; }
+        .servicehours-valencia .service-wrap-valencia h4 {
+          color: #5f6f9b; } }
+    .servicehours-valencia .service-wrap-valencia div {
+      text-align: center; }
+    .servicehours-valencia .service-wrap-valencia .spacer {
+      margin-top: 20px;
+      width: 300px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto; }
+    .servicehours-valencia .service-wrap-valencia .mask {
+      overflow: hidden;
+      height: 20px; }
+    .servicehours-valencia .service-wrap-valencia .mask:after {
+      content: "";
+      display: block;
+      margin: -25px auto 0;
+      width: 100%;
+      height: 25px;
+      border-radius: 125px/12px;
+      box-shadow: 0 0 8px white; }
+
 header {
   background-color: #25211d; }
   header .logo {
@@ -220,8 +523,13 @@ header {
   header nav {
     text-align: center;
     background-color: #5f6f9b; }
+    header nav .menuicon {
+      float: left;
+      margin-left: 20px;
+      visibility: hidden; }
     header nav ul {
-      margin: 0px; }
+      margin: 0px;
+      visibility: visible; }
       header nav ul li {
         font-size: 20px;
         padding-right: 50px;
@@ -262,6 +570,11 @@ header {
       color: white; }
   header .active {
     color: #25211d; }
+  @media screen and (max-width: 700px) {
+    header nav ul {
+      visibility: hidden; }
+    header nav .menuicon {
+      visibility: visible; } }
 
 footer {
   background-color: #25211d; }
@@ -361,3 +674,95 @@ footer {
         margin-bottom: 0px; }
       .contact form label span {
         display: block; }
+
+.blogposts {
+  height: 600px; }
+  .blogposts h1 {
+    text-align: center;
+    padding-top: 20px; }
+  .blogposts a {
+    color: #25211d; }
+    .blogposts a:hover {
+      color: #5f6f9b; }
+
+.blog-items {
+  background: #5f6f9b; }
+  .blog-items h2 {
+    text-align: center;
+    margin-top: 0px;
+    color: #fff; }
+
+.thumb-container {
+  max-width: 960px;
+  margin: 20px auto 0;
+  padding-bottom: 100px; }
+  .thumb-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .thumb-container .thumb-unit {
+    display: block;
+    width: 23%;
+    float: left;
+    position: relative;
+    padding-top: 15%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    overflow: hidden;
+    background-image: url(/img/blog-icon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto; }
+    .thumb-container .thumb-unit .overlay {
+      position: absolute;
+      top: 100%;
+      right: 0px;
+      left: 0px;
+      height: 100%;
+      background: rgba(128, 128, 128, 0.9);
+      text-align: center;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      .thumb-container .thumb-unit .overlay strong {
+        display: block;
+        padding: 10px;
+        color: white;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 20px; }
+    .thumb-container .thumb-unit:hover .overlay {
+      position: absolute;
+      top: 50%;
+      right: 0px;
+      left: 0px; }
+
+@media screen and (max-width: 960px) {
+  .thumb-container {
+    max-width: 480px; }
+    .thumb-container .thumb-unit {
+      padding-top: 30%;
+      width: 46%;
+      margin-left: 2%;
+      margin-right: 2%;
+      margin-bottom: 4%; }
+      .thumb-container .thumb-unit .overlay {
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        left: 0px; } }
+@media screen and (max-width: 480px) {
+  .thumb-container {
+    max-width: 240px; }
+    .thumb-container .thumb-unit {
+      padding-top: 60%;
+      width: 100%;
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 6%; }
+      .thumb-container .thumb-unit .overlay {
+        position: absolute;
+        top: 5%;
+        right: 0px;
+        left: 0px; } }

@@ -26,8 +26,15 @@ header
 	nav
 		text-align: center
 		background-color: $bg-color2
+
+		.menuicon
+			float: left
+			margin-left: 20px
+			visibility: hidden
+		
 		ul
 			margin: 0px
+			visibility: visible
 
 			li
 				font-size: 20px
@@ -80,6 +87,17 @@ header
 
 	.active
 		color: $bg-color1
+
+
+	//MEDIA QUERIES
+
+	@media screen and (max-width: 700px)
+		nav
+			ul
+				visibility: hidden
+
+			.menuicon
+				visibility: visible
 
 
 
