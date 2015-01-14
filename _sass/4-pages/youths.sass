@@ -1,19 +1,82 @@
-.blogposts
-	height: 600px
+//ABOUT
+.about_youth
+	height: 250px
 
-	h1
+	h3
+		color: $text-color
+		text-align: center
+
+	p
+		color: $bg-color3
+		text-align: center
+		padding-top: 30px
+		padding-bottom: 20px
+		padding-left: 100px
+		padding-right: 100px
+
+	@media screen and (max-width: 650px)
+		height: auto
+
+		p
+			padding-left: 50px
+			padding-right: 50px
+
+
+//GALLERY
+
+.gallery-items
+	background: white
+
+	h3
 		text-align: center
 		padding-top: 20px
-	a
-		color: $bg-color1
-		&:hover
-			color: $bg-color2
+
+.gallery-container
+	max-width: 960px
+	margin: 0px auto
+	padding-bottom: 100px
+	padding-left: 50px
+	padding-right: 50px
+	+clearfix
+
+	.gallery-unit
+		display: block
+		width: 25%
+		float: left
+		position: relative
+		padding-top: 20%
+		overflow: hidden
+
+		background:
+			image: url(/img/gallery_assets/gallery-image.jpg)
+			position: center center
+			size: 100% 100%
+			repeat: no-repeat
+
+		.gallery-overlay
+			+position(absolute, 0px 0px null 0px)
+			height: 100%
+			background: fade-out($bg-color2, 0.5)
+			text-align: center 
+		strong
+			display: block
+			color: white
+			padding-top: 50px
+
+	@media screen and (max-width: 600px)
+		.gallery-unit
+			width: 50%
+			padding-top: 35%
+
+
+//BLOG
 
 
 .blog-items
 	background: $bg-color2
-	h2
+	h3
 		text-align: center
+		padding-top: 20px
 		margin-top: 0px
 		color: #fff
 

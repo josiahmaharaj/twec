@@ -14,7 +14,7 @@
   <link rel="alternate" type="application/atom+xml" title="True Worshippers Evangelistic Centre" href="http://twectt.com/feed.xml" />
 
   <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="/js/jssor.slider.min.js"></script>
+
 </head>
 
 
@@ -27,10 +27,33 @@
 <h1><span>T.W.E.C</span></h1>
 <p>True Worshippers Evangelistic Centre</p>
 
-<nav>   
+<script>
+        $(function() {
+            var pull        = $('#pull');
+                menu        = $('nav ul');
+                menuHeight  = menu.height();
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 600 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+
+
+
+<!-- NAVIGATION -->
+
+<nav class="clearfix">   
+
+<!--     <?xml version="1.0" encoding="utf-8"?>
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
     <svg version="1.1" class="menuicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
@@ -47,22 +70,23 @@
                     S44.149,43.244,41.388,43.244z"/>
             </g>
         </g>
-    </svg>
+    </svg> -->
 
-  <ul>
+  <ul class="clearfix">
     <li><a  href="/index.html">Home</a></li>
     <li><a href="#">Outsations</a>
     	<ul>
     		<li><a  href="/Outstations/Arouca/index.html">Arouca</a></li>
-    		<li><a  href="/Outstations/Bon-Air-West/.html">Bon Air West</a></li>
+    		<li><a  href="/Outstations/Bon-Air-West/index.html">Bon Air West</a></li>
     		<li><a  href="/Outstations/Coryal/index.html">Coryal</a></li>
     		<li><a  href="/Outstations/Valencia/index.html">Valencia</a></li>
     	</ul>
     </li>
     <li><a  href="/Events/index.html">Events</a></li>
-    <li><a  href="/Youths/index.html">Youths</a></li>
-    <li><a  href="/Extras/index.html">Extras</a></li>
+    <li><a class="active"  href="/Youths/index.html">Youths</a></li>
+    <!-- <li><a  href="/Extras/index.html">Extras</a></li> -->
   </ul>
+  <a href="#" id="pull"><h3>Menu</h3></a>
 </nav>
 
 </header>
@@ -70,49 +94,25 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <!-- BLOG -->
-<!-- <div class="blogposts">
+        <div class="about_youth">
+	<h3> <em>about the youth</em> </h3>
 
-	<h1 class="page-heading">Posts</h1>
-
-  	<ul class="post-list">
-    	
-      	<li>
-        	<span class="post-meta">5-01-2015</span>
-
-        	<h2>
-          		<a class="post-link" href="/2015/01/05/New-Year's-Post.html">New Year's Post</a>
-        	</h2>
-      	</li>
-    	
-      	<li>
-        	<span class="post-meta">18-12-2014</span>
-
-        	<h2>
-          		<a class="post-link" href="/jekyll/update/2014/12/18/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-        	</h2>
-      	</li>
-    	
-      	<li>
-        	<span class="post-meta">8-12-2014</span>
-
-        	<h2>
-          		<a class="post-link" href="/jekyll/update/2014/12/08/first_test.html">First Test! :)</a>
-        	</h2>
-      	</li>
-    	
-  	</ul>
-
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
 </div>
-
- -->
 
 
 <!-- BLOG -->
 
 <section class="blog-items">
 
-	<h2>POSTS</h2>
+	<h3><em>Posts</em></h3>
 
 
 	
@@ -155,6 +155,95 @@
 
 
 </section>
+
+<!-- GALLERY -->
+
+<section class="gallery-items">
+
+	<h3> <em>Gallery</em> </h3>
+
+	<div class="gallery-container">
+
+		
+		<a href="" class="gallery-unit" style="background-image: url(/img/gallery_assets/youth_director.jpg);">
+
+			<div class="gallery-overlay">
+				<strong>Lincoln Maharaj</strong>
+				<div class="icon"></div>
+			</div>	
+		</a>
+		
+		<a href="" class="gallery-unit" style="background-image: url(/img/gallery_assets/pcg_bishop.jpg);">
+
+			<div class="gallery-overlay">
+				<strong>Bishop</strong>
+				<div class="icon"></div>
+			</div>	
+		</a>
+		
+		<a href="" class="gallery-unit" style="background-image: url(/img/gallery_assets/crowd1.jpg);">
+
+			<div class="gallery-overlay">
+				<strong>Talent Expo</strong>
+				<div class="icon"></div>
+			</div>	
+		</a>
+		
+		<a href="" class="gallery-unit" style="background-image: url(/img/gallery_assets/crowd2.jpg);">
+
+			<div class="gallery-overlay">
+				<strong>Talent Expo</strong>
+				<div class="icon"></div>
+			</div>	
+		</a>
+		
+		<a href="" class="gallery-unit" style="background-image: url(/img/gallery_assets/crowd3.jpg);">
+
+			<div class="gallery-overlay">
+				<strong>Talent Expo</strong>
+				<div class="icon"></div>
+			</div>	
+		</a>
+		
+		<a href="" class="gallery-unit" style="background-image: url(/img/gallery_assets/drummer.jpg);">
+
+			<div class="gallery-overlay">
+				<strong>Micah</strong>
+				<div class="icon"></div>
+			</div>	
+		</a>
+		
+		<a href="" class="gallery-unit" style="background-image: url(/img/gallery_assets/moderator.jpg);">
+
+			<div class="gallery-overlay">
+				<strong>Moderator</strong>
+				<div class="icon"></div>
+			</div>	
+		</a>
+		
+		<a href="" class="gallery-unit" style="background-image: url(/img/gallery_assets/darren.jpg);">
+
+			<div class="gallery-overlay">
+				<strong>Darren Dookie</strong>
+				<div class="icon"></div>
+			</div>	
+		</a>
+		
+		<a href="" class="gallery-unit" style="background-image: url(/img/gallery_assets/gathering.jpg);">
+
+			<div class="gallery-overlay">
+				<strong>Talent Expo</strong>
+				<div class="icon"></div>
+			</div>	
+		</a>
+		
+
+	</div>	
+
+</section>
+
+
+
 
 		
       </div>

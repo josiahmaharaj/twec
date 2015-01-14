@@ -3,33 +3,26 @@ layout: default
 title: T.W.E.C | Youths
 ---
 
-<!-- BLOG -->
-<!-- <div class="blogposts">
 
-	<h1 class="page-heading">Posts</h1>
+<div class="about_youth">
+	<h3> <em>about the youth</em> </h3>
 
-  	<ul class="post-list">
-    	{% for post in site.posts %}
-      	<li>
-        	<span class="post-meta">{{ post.date | date: "%-d-%m-%Y" }}</span>
-
-        	<h2>
-          		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        	</h2>
-      	</li>
-    	{% endfor %}
-  	</ul>
-
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
 </div>
-
- -->
 
 
 <!-- BLOG -->
 
 <section class="blog-items">
 
-	<h2>POSTS</h2>
+	<h3><em>Posts</em></h3>
 
 
 	{% for post in site.posts %}
@@ -50,5 +43,30 @@ title: T.W.E.C | Youths
 
 
 </section>
+
+<!-- GALLERY -->
+
+<section class="gallery-items">
+
+	<h3> <em>Gallery</em> </h3>
+
+	<div class="gallery-container">
+
+		{% for image in site.data.youth.images %}
+		<a href="" class="gallery-unit" style="background-image: url(/img/gallery_assets/{{image.file}});">
+
+			<div class="gallery-overlay">
+				<strong>{{ image.name }}</strong>
+				<div class="icon"></div>
+			</div>	
+		</a>
+		{% endfor %}
+
+	</div>	
+
+</section>
+
+
+
 
 		

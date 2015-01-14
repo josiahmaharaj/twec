@@ -1,0 +1,88 @@
+.events
+	h3
+		text-align: center
+		padding-top: 20px
+		margin: 0
+
+	table
+		text-align: left
+		width: auto
+		margin-left: auto
+		margin-right: auto
+
+		.month-border 
+			border-bottom: 1px solid $bg-color2
+
+		tr
+			margin-top: 100px
+			margin-bottom: 10px
+
+			td
+				color: $bg-color1
+		th
+			margin-left: 10px
+			margin-right: 10px
+
+
+$breakpoint-alpha: 480px // adjust to your needs
+
+table
+	margin: 1em 0
+	min-width: 300px
+
+	// tr
+	// 	border-top: 1px solid #ddd
+	// 	border-bottom: 1px solid #ddd
+
+		// th
+		// 	display: none
+
+			td
+				display: block
+				&:first-child
+					padding-top: .5em
+				&:last-child
+					padding-bottom: .5em
+				&:before
+					content: attr(data-th)": "
+					font-weight: bold
+					width: 6.5em
+					display: inline-block
+
+				@media (min-width: $breakpoint-alpha)
+				display: none
+
+		th,td
+			text-align: left
+
+			@media (min-width: $breakpoint-alpha)
+				display: table-cell
+				padding: .25em .5em
+
+				&:first-child
+					padding-left: 0
+				&:last-child
+					padding-right: 0
+
+.events
+	padding: 0 2em
+	-webkit-font-smoothing: antialiased
+	text-rendering: optimizeLegibility
+	color: #444
+	background: #eee
+
+	table
+		background: $bg-color3
+		color: #fff
+		overflow: hidden
+
+		tr
+			border-color: lighten(#34495e, 10%)
+
+		th, td
+			margin: .5em 1em
+			@media (min-width: $breakpoint-alpha)
+			padding: 1em !important
+
+		th,td:before
+			color: black

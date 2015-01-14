@@ -14,7 +14,7 @@
   <link rel="alternate" type="application/atom+xml" title="True Worshippers Evangelistic Centre" href="http://twectt.com/feed.xml" />
 
   <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="/js/jssor.slider.min.js"></script>
+
 </head>
 
 
@@ -27,10 +27,33 @@
 <h1><span>T.W.E.C</span></h1>
 <p>True Worshippers Evangelistic Centre</p>
 
-<nav>   
+<script>
+        $(function() {
+            var pull        = $('#pull');
+                menu        = $('nav ul');
+                menuHeight  = menu.height();
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            $(pull).on('click', function(e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 600 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+
+
+
+<!-- NAVIGATION -->
+
+<nav class="clearfix">   
+
+<!--     <?xml version="1.0" encoding="utf-8"?>
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
     <svg version="1.1" class="menuicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
@@ -47,22 +70,23 @@
                     S44.149,43.244,41.388,43.244z"/>
             </g>
         </g>
-    </svg>
+    </svg> -->
 
-  <ul>
+  <ul class="clearfix">
     <li><a  href="/index.html">Home</a></li>
     <li><a href="#">Outsations</a>
     	<ul>
     		<li><a  href="/Outstations/Arouca/index.html">Arouca</a></li>
-    		<li><a  href="/Outstations/Bon-Air-West/.html">Bon Air West</a></li>
+    		<li><a  href="/Outstations/Bon-Air-West/index.html">Bon Air West</a></li>
     		<li><a  href="/Outstations/Coryal/index.html">Coryal</a></li>
     		<li><a  href="/Outstations/Valencia/index.html">Valencia</a></li>
     	</ul>
     </li>
     <li><a  href="/Events/index.html">Events</a></li>
     <li><a  href="/Youths/index.html">Youths</a></li>
-    <li><a  href="/Extras/index.html">Extras</a></li>
+    <!-- <li><a class="active"  href="/Extras/index.html">Extras</a></li> -->
   </ul>
+  <a href="#" id="pull"><h3>Menu</h3></a>
 </nav>
 
 </header>
@@ -70,7 +94,12 @@
 
     <div class="page-content">
       <div class="wrapper">
-        
+        <section class="extras">
+
+	<h1>Under Construction</h1>
+
+</section>
+
       </div>
     </div>
 

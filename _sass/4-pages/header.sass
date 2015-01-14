@@ -23,22 +23,30 @@ header
 		color: white
 		text-align: center
 
+	.clearfix:before, .clearfix:after
+		content: " "
+		display: table
+	.clearfix:after
+		clear: both
+	.clearfix
+		*zoom: 1
+
 	nav
 		text-align: center
 		background-color: $bg-color2
+		position: relative
 
 		.menuicon
 			float: left
 			margin-left: 20px
-			visibility: hidden
 		
 		ul
 			margin: 0px
-			visibility: visible
 
 			li
 				font-size: 20px
-				padding-right: 50px
+				padding-right: 30px
+				padding-left: 30px
 				padding-top: 10px
 				padding-bottom: 10px
 				color: white
@@ -84,6 +92,13 @@ header
 		a
 			color: white
 
+	nav li
+		display: inline
+		float: left
+
+	nav a#pull
+		display: none
+
 
 	.active
 		color: $bg-color1
@@ -91,13 +106,48 @@ header
 
 	//MEDIA QUERIES
 
-	@media screen and (max-width: 700px)
+	@media screen and (max-width: 600px)
 		nav
-			ul
-				visibility: hidden
+			border-bottom: 0
 
-			.menuicon
-				visibility: visible
+		nav ul
+			display: none
+			height: auto
+
+		nav ul ul
+			display: none
+			position: absolute 
+			top: 100%
+
+		nav a#pull
+			text-align: left
+			color: white
+			padding-left: 15px
+			display: block
+			width: 100%
+			position: relative
+
+		nav a#pull:after
+			content: ""
+			background: url('/img/nav-icon.png') no-repeat
+			width: 30px
+			height: 30px
+			display: inline-block
+			position: absolute
+			right: 20px
+			top: 5px
+
+		nav li
+			display: block
+			float: none
+			width: 100%
+
+		nav ul li
+			padding-left: 0px
+			padding-right: 0px
+
+		nav li a
+			border-bottom: 1px solid white
 
 
 
