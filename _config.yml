@@ -3,9 +3,13 @@ title: True Worshippers Evangelistic Centre
 email: twec_arouca@gmail.com
 description: Official Website of the True Worshippers Evangelistic Centre. Trinidad, West Indies
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://twectt.com" # the base hostname & protocol for your site
+url: "http://www.twectt.com" 
 twitter_username: twec_arouca
 github_username:  josiahmaharaj
 
 # Build settings
 markdown: kramdown
+
+sass:
+  sass_dir: assets/css
+  style: :nested
